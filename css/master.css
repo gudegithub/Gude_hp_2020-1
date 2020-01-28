@@ -1,0 +1,546 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+	user-select: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* end of reset css */
+
+header {
+  height: 80px;
+  padding: 20px 0;
+}
+
+.header-inner {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  width: 60%;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.nav-bar ul li a {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333333;
+}
+
+
+.wrapper-inner {
+  min-width: 1200px;
+}
+
+.mission-wrapper {
+  width: 100%;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-image-wrapper {
+  width: 100%;
+  height: calc(95vh - 80px);
+	background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+	background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+	background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7));
+
+}
+
+.overlay {
+  padding-left: 72px;
+  padding-bottom: 12vh;
+  margin: auto;
+  width: 1200px;
+  height: 100%;
+  pointer-events: all;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.caption {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  font-size: 70px;
+  line-height: 76px;
+  margin: 16px 0;
+}
+
+.overlay .button {
+  margin: 16px 0;
+  width: 170px;
+  height: 36px;
+  border-radius: 30px;
+  padding: 8px 32px;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.82);
+  font-weight: bold;
+  font-family: Futura;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* content */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #3d3d3d;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.section-title-caption {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    color: #3d3d3d;
+    display: inline-block;
+}
+
+.tab-toggle-button-wrapper {
+  display: flex;
+  flex-flow: nowrap;
+  margin: 44px 0 16px;
+}
+
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+
+input[type=radio].tab-radio-input {
+  display: none;
+}
+
+.tab-toggle-button {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    height: 36px;
+    border-radius: 18px;
+    color: #ffffff;
+    padding: 10px 24px;
+    background-color: #e7e7e7;
+    margin-right: 8px;
+    cursor: pointer;
+    -webkit-transition: color 215ms ease-out, background-color 215ms ease-out;
+    transition: color 215ms ease-out, background-color 215ms ease-out;
+}
+
+.display-recent {
+  background-color: #5e5e5e;
+}
+
+.news-wrapper {
+	margin-top: 100px;
+}
+
+.news-list-wrapper {
+  height: 208px;
+}
+
+.news-list {
+  width: 100%;
+  height: auto;
+}
+
+.news-list ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-flow: row wrap;
+  height: 208px;
+}
+
+.news-list ul li {
+  display: block;
+  width: 309.33333333px;
+  height: 208px; /* 309.33333333px */
+  margin-top: 0;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  transform: scale(1);
+  box-shadow: 0 10px 16px 0 rgba(226,226,226,0.38);
+}
+.news-list ul li a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.news-header {
+  height: 43px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 16px;
+  align-items: center;
+}
+
+.news-header .label {
+  display: inline-block;
+  width: auto;
+  height: 24px;
+  border-radius: 12px;
+  padding: 7px 12px;
+  font-size: 11px;
+  line-height: 11px;
+  color: #ffffff;
+  background-color: #5e5e5e;
+}
+
+.published-at {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #333333;
+  letter-spacing: .1em;
+}
+
+.news-body {
+  flex: 1 0 auto;
+  background-color: #ffffff;
+  padding: 32px 14px 16px;
+  color: #333333;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.news-body .title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.more-button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  align-self: flex-end;
+  white-space: nowrap;
+}
+
+.more-button i  {
+  margin-left: 4px;
+}
+
+.news-more-button {
+  display: flex;
+  justify-content: center;
+}
+
+.news-more-button a {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #1b1b1b;
+  margin: 48px 0 24px;
+}
+
+.card-wrapper {
+  position: relative;
+  margin: 32px 0;
+  width: 100%;
+  height: 60vh;
+}
+
+.card:hover {
+  transform: scale(0.99);
+  transition: transform ease-out 215ms, -webkit-transform ease-out 215ms;
+}
+
+.card-wrapper .card {
+  transition: transform ease-out 215ms, -webkit-transform ease-out 215ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  padding: 40px 60px;
+  border-radius: 30px;
+}
+
+/*
+.card-wrapper .shadow {
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.3);
+} */
+
+.slick-list {
+	overflow: visible;
+}
+
+.product-wrapper {
+	width: auto;
+	align-items: center;
+	overflow: hidden;
+}
+
+.product-wrapper .card {
+	width: 70vw;
+	height: 54vh;
+	margin: 0 auto;
+	margin-left: 120px;
+}
+
+.product1 {
+  -webkit-box-shadow: 1px 10px 20px 0px rgba(17,75,75,0.5);
+  -moz-box-shadow: 1px 10px 20px 0px rgba(17,75,75,0.5);
+  box-shadow: 1px 10px 20px 0px rgba(17,75,75,0.5);
+  background-image: url(../image/sea-image.jpg);
+  background-size: cover;
+}
+
+.card-title {
+  color: rgba(255,255,255,0.7);
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.card-description {
+  width: 40%;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5
+}
+
+.about-company {
+  -webkit-box-shadow: 1px 10px 20px 0px rgba(14,52,52,0.5);
+  -moz-box-shadow: 1px 10px 20px 0px rgba(14,52,52,0.5);
+  box-shadow: 1px 10px 20px 0px rgba(14,52,52,0.5);
+  background-image: url(../image/background-image.jpg);
+  background-size: cover;
+}
+
+.description-button {
+  display: inline-block;
+  padding: 12px 32px;
+  margin: 20px auto;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: color 215ms ease-out, background-color 215ms ease-out;ß
+}
+
+.white-button {
+	color: white;
+	border: 1px solid white;
+}
+
+.white-button:hover {
+  background-color: white;
+  color: black;
+  transition: color 215ms ease-out, background-color 215ms ease-out;
+}
+
+.about-recruit {
+  -webkit-box-shadow: 1px 10px 20px 0px rgba(96,196,196,0.5);
+  -moz-box-shadow: 1px 10px 20px 0px rgba(96,196,196,0.5);
+  box-shadow: 1px 10px 20px 0px rgba(96,196,196,0.5);
+  background-image: url(../image/architecture.jpg);
+  background-size: cover;
+}
+
+.contact {
+  margin: 100px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.black-button {
+  color: #333333;
+  border: 1px solid black;
+}
+
+.black-button:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.access-wrapper {
+	height: 50%;
+  width: auto;
+  margin: 0 auto;
+	align-items: center;
+	overflow: hidden;
+	user-select: none;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: flex-start;
+	margin-left: 150px;
+	overflow: visible;
+	padding-left: 56px;
+	width: auto;
+}
+
+.access {
+  transition: transform ease-out 215ms, -webkit-transform ease-out 215ms;
+	width: 70vw;
+	height: 50vh;
+  padding-left: 30px;
+  border-radius: 30px;
+	margin-left: 120px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 5px 20px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 5px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: 1px 5px 20px 0px rgba(0,0,0,0.5);
+}
+
+.access-flex {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.access-message {
+  width: 50%;
+	height: 100%;
+}
+
+.access-message p {
+  color: #333333;
+  margin-top: 40px;
+	margin-right: 50px;
+  line-height: 1.5;
+}
+
+.access-message h2 {
+	color: #333333;
+	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-weight: 800;
+}
+
+footer {
+  height: 25vh;
+  background-color: #333333;
+}
+
+.footer-inner {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.footer-icon {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-inner img {
+  height: 65%;
+  display: inline-block;
+}
+
+.footer-logo {
+  font-size: 60%;
+  color: rgba(255,255,255,0.8);
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 800;
+}

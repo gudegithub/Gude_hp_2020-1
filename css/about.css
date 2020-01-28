@@ -1,0 +1,74 @@
+
+.container {
+  text-align: center;
+}
+
+.company-vision-wrapper {
+  margin: 50px 0;
+}
+
+.vision-card {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  background: -moz-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../image/vision-image.jpeg);
+  background: -webkit-linear-gradient(65deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../image/vision-image.jpe);
+  background: linear-gradient(25deg, rgba(255, 190, 44, 0.4), rgba(255, 44, 171, 0.7)),url(../image/vision-image.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+}
+
+.vision-card .card-title {
+  margin-bottom: 10%;
+}
+
+.button {
+  margin: 16px 0;
+  width: auto;
+  height: 36px;
+  border-radius: 30px;
+  padding: 8px 32px;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.82);
+  font-weight: bold;
+  font-family: Futura;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.company-card {
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+.company-image {
+  width: 50%;
+}
+
+.company-image img {
+  width: 25vh;
+  height: auto;
+  align-items: center;
+}
+
+dl {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+dl dd {
+  font-size: 14px;
+  width: 70%;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
